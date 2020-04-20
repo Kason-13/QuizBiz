@@ -1,0 +1,17 @@
+#include "View.h"
+
+void Vue::affichageTitre(std::string titre) {
+	// to format it in the top middle of the screen
+
+	std::cout << "titre";
+}
+
+std::string Vue::userInput() {
+	std::string userInput="";
+	std::getline(std::cin, userInput);
+	return userInput;
+}
+
+void Vue::affichageQuestion(std::string question) {
+
+}
