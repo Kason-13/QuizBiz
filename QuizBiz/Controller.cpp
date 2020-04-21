@@ -2,14 +2,13 @@
 
 int main() {
 
-
+	Controller controller;
+	controller.boucleQuiz();
 	return 0;
 }
 
 Controller::Controller() 
 {
-	Model model;
-	Vue vue;
 	questionListIndex = std::stoi(vue.userInput());
 	questionListe = model.getQuestions(questionListIndex);
 }
@@ -17,6 +16,7 @@ Controller::Controller()
 void Controller::boucleQuiz() {
 	for (int index{}; index < questionListe.size(); ++index) 
 	{
-
+		vue.affichageQuestion(questionListe.at(index).question);
+		vue.userInput();
 	}
 }

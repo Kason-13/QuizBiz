@@ -5,6 +5,5 @@
 class Question 
 {
 public:
-	std::string question;
-
+	std::string mQuestion;
 };

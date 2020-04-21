@@ -126,12 +126,16 @@
     <ClCompile Include="Controller.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="Question.cpp" />
+    <ClCompile Include="QuestionsDB.cpp" />
+    <ClCompile Include="QuestionVraisFaux.cpp" />
     <ClCompile Include="View.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Controller.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="Question.h" />
+    <ClInclude Include="QuestionsDB.h" />
+    <ClInclude Include="QuestionVraisFaux.h" />
     <ClInclude Include="View.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

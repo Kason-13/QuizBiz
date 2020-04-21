@@ -14,6 +14,8 @@ public:
 
 private:
 	bool quitter{ false };
+	Model model;
+	Vue vue;
 	int questionListIndex;
 	std::vector<Question> questionListe;
 };

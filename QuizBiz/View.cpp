@@ -13,5 +13,5 @@ std::string Vue::userInput() {
 }
 
 void Vue::affichageQuestion(std::string question) {
-
+	std::cout << "\n\n" << "question: " << question <<"\n\n";
 }
