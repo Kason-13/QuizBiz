@@ -12,6 +12,12 @@ std::string Vue::userInput() {
 	return userInput;
 }
 
+
 void Vue::affichageQuestion(std::string question) {
 	std::cout << "\n\n" << "question: " << question <<"\n\n";
+}
+
+std::string Vue::askWhichQuiz() {
+	std::cout << "quel quiz voulez vous essayer: ";
+	return userInput();
 }

@@ -126,7 +126,10 @@
     <ClCompile Include="Controller.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="Question.cpp" />
+    <ClCompile Include="QuestionChoixRep.cpp" />
+    <ClCompile Include="QuestionNumerique.cpp" />
     <ClCompile Include="QuestionsDB.cpp" />
+    <ClCompile Include="QuestionText.cpp" />
     <ClCompile Include="QuestionVraisFaux.cpp" />
     <ClCompile Include="View.cpp" />
   </ItemGroup>
@@ -134,7 +137,10 @@
     <ClInclude Include="Controller.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="Question.h" />
+    <ClInclude Include="QuestionChoixRep.h" />
+    <ClInclude Include="QuestionNumerique.h" />
     <ClInclude Include="QuestionsDB.h" />
+    <ClInclude Include="QuestionText.h" />
     <ClInclude Include="QuestionVraisFaux.h" />
     <ClInclude Include="View.h" />
   </ItemGroup>

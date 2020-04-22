@@ -1,6 +1,5 @@
 #pragma once
 #include "Question.h" 
-#include <vector>
 #include <string>
 
 class QuestionVraisFaux : public Question {
@@ -9,7 +8,12 @@ public:
 	QuestionVraisFaux(std::string question, bool reponse)
 	{
 		mQuestion = question;
-		response = reponse;
+		mReponse = reponse;
 	}
-	bool response = false;
+	~QuestionVraisFaux() override = default;
+	void affichageInstruction() override {
+		std::cout << "/nRepondez en inscrivant 'vrais' ou 'faux' / 'v' ou 'f' ";
+	};
+private:
+	bool mReponse = false;
 };
