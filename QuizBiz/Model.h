@@ -1,5 +1,6 @@
 #pragma once
 #include "Question.h"
+#include "QuestionsDB.h"
 #include <vector>
 
 class Model 
@@ -7,8 +8,9 @@ class Model
 public:
 	Model();
 	~Model();
-	std::vector<Question> getQuestions(int index);
+	std::vector<Question*> getQuestions(int index);
 
 private:
-	std::vector<std::vector<Question>> questionDB;
+	QuestionDB DB;
+	std::vector<std::vector<Question*>> questionDB;
 };

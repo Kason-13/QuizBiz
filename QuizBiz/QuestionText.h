@@ -15,7 +15,7 @@ public:
 	~QuestionText() override = default;
 	void affichageInstruction() override {
 		std::cout << "repondez avec une reponse entre " << mMinLengthContrainte << " et " << mMaxLengthContrainte << " characteres.";
-	};
+	}
 private:
 	std::string mReponse = "";
 	int mMinLengthContrainte = 0;

@@ -10,12 +10,10 @@ public:
 	~Controller() = default;
 	void boucleQuiz();
 
-
-
 private:
 	bool quitter{ false };
 	Model model;
 	Vue vue;
 	int questionListIndex;
-	std::vector<Question> questionListe;
+	std::vector<Question*> questionListe;
 };

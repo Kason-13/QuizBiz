@@ -17,7 +17,7 @@ public:
 		std::cout << "\nChoisir une des reponses suivantes en indiquant l'index\n";
 		for (int index{}; index < mChoixReps.size(); ++index)
 			std::cout << index + 1 << ": " << mChoixReps.at(index) << "\n";
-	};
+	}
 private:
 	int mIndexRep = 0;
 	std::vector<std::string> mChoixReps;

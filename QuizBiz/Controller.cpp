@@ -4,6 +4,7 @@ int main() {
 
 	Controller controller;
 	controller.boucleQuiz();
+
 	return 0;
 }
 
@@ -16,7 +17,7 @@ Controller::Controller()
 void Controller::boucleQuiz() {
 	for (int index{}; index < questionListe.size(); ++index) 
 	{
-		vue.affichageQuestion(questionListe.at(index).mQuestion);
+		vue.affichageQuestion((*questionListe.at(index)).mQuestion);
 		vue.userInput();
 	}
 }

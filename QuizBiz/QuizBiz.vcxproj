@@ -131,6 +131,11 @@
     <ClCompile Include="QuestionsDB.cpp" />
     <ClCompile Include="QuestionText.cpp" />
     <ClCompile Include="QuestionVraisFaux.cpp" />
+    <ClCompile Include="Validator.cpp" />
+    <ClCompile Include="ValidatorChoixRep.cpp" />
+    <ClCompile Include="ValidatorNumerique.cpp" />
+    <ClCompile Include="ValidatorText.cpp" />
+    <ClCompile Include="ValidatorVraiFaux.cpp" />
     <ClCompile Include="View.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +147,11 @@
     <ClInclude Include="QuestionsDB.h" />
     <ClInclude Include="QuestionText.h" />
     <ClInclude Include="QuestionVraisFaux.h" />
+    <ClInclude Include="Validator.h" />
+    <ClInclude Include="ValidatorChoixRep.h" />
+    <ClInclude Include="ValidatorNumerique.h" />
+    <ClInclude Include="ValidatorText.h" />
+    <ClInclude Include="ValidatorVraiFaux.h" />
     <ClInclude Include="View.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

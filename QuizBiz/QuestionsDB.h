@@ -14,9 +14,9 @@ class QuestionDB {
 
 public:
 	void remplirDB();
-	std::vector<Question> CreateQuestions();
-	std::vector<Question> getDB();
+	std::vector<Question*> CreateQuestions();
+	std::vector<Question*> getDB();
 
 private:
-	std::vector<Question> DB;
+	std::vector<Question*> DB;
 };

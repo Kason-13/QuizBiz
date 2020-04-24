@@ -6,7 +6,7 @@
 class Question 
 {
 public:
-	Question() {};
+	Question() : mQuestion{} {}
 	virtual ~Question() = default;
 	virtual void affichageInstruction() = 0;
 

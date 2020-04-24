@@ -13,7 +13,7 @@ public:
 	~QuestionNumerique() override = default;
 	void affichageInstruction() override {
 		std::cout << "Entrez votre reponse en valeur numerique.\n";
-	};
+	}
 private:
 	bool mEntier;
 	float mReponse = 0;

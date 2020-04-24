@@ -13,7 +13,7 @@ public:
 	~QuestionVraisFaux() override = default;
 	void affichageInstruction() override {
 		std::cout << "/nRepondez en inscrivant 'vrais' ou 'faux' / 'v' ou 'f' ";
-	};
+	}
 private:
 	bool mReponse = false;
 };
