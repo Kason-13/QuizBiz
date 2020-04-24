@@ -16,6 +16,7 @@ public:
 		verifMax = newContrainte;
 	}
 
+	//overriden methods from Validator class
 	bool validate() override {
 		int userAnswerInt = std::stoi(mUserAnswer);
 		if (userAnswerInt == 0 || userAnswerInt < verifMax)

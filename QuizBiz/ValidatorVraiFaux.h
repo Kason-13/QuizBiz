@@ -15,6 +15,7 @@ public:
 		mReponse = reponse;
 	}
 
+	//overriden methods from Validator class
 	bool validate() override {
 		repMaj = toupper(mUserAnswer.at(0));
 		if (repMaj == 'V' || repMaj == 'F')

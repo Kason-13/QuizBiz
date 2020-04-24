@@ -1,6 +1,7 @@
 #pragma once
 #include "Validator.h"
 #include <string>
+#include <regex>
 
 class ValidatorText : public Validator {
 public:
@@ -18,6 +19,7 @@ public:
 		maxLength = max;
 	}
 
+	//overriden methods from Validator class
 	bool validate() override {
 		int sizeOfAnswer = mReponse.size();
 		if (sizeOfAnswer<minLenght || sizeOfAnswer>maxLength)
@@ -25,7 +27,6 @@ public:
 		return true;
 	}
 
-	// to finish
 	bool verifierReponse() override {
 		
 	}
