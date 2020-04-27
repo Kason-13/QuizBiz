@@ -1,7 +1,7 @@
 #pragma once
-
 #include <string>
 #include <iostream>
+#include "Validator.h"
 
 class Question 
 {
@@ -11,4 +11,6 @@ public:
 	virtual void affichageInstruction() = 0;
 
 	std::string mQuestion;
+	Validator *validator;
+	// mReponse ???
 };

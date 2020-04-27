@@ -7,3 +7,7 @@ bool Validator::verifier() {
 		return true;
 	return false;
 }
+
+void Validator::setUserAnswer(std::string userAnswer) {
+	mUserAnswer = userAnswer;
+}

@@ -4,17 +4,12 @@
 
 class ValidatorChoixRep : public Validator {
 public:
-	ValidatorChoixRep(std::string userAnswer) {
-		mUserAnswer = userAnswer;
-	}
+	ValidatorChoixRep() {}
 	~ValidatorChoixRep() override = default;
-	void setReponse(int indexRep)
-	{
-		mReponse = indexRep;
-	}
-	void setNumberOfOptions(int newContrainte){
-		verifMax = newContrainte;
-	}
+
+	void setReponse(int indexRep);
+
+	void setNumberOfOptions(int newContrainte);
 
 	//overriden methods from Validator class
 	bool validate() override {

@@ -5,23 +5,12 @@
 
 class ValidatorNumerique : public Validator{
 public:
-	ValidatorNumerique(std::string userAnswer) {
-		mUserAnswer = userAnswer;
-	}
+	ValidatorNumerique() {}
 	~ValidatorNumerique() override = default;
 
-	void setReponse(float reponse) {
-		mReponse = reponse;
-	}
+	void setReponse(float reponse);
 
-	bool isAIntOrFloat(){
-		for (int index{}; index < mUserAnswer.length; ++index) {
-			if (!std::isdigit(mUserAnswer.at(index)) && mUserAnswer.at(index) != '.')
-				return false;
-		}
-		userResponse = std::stof(mUserAnswer);
-		return true;
-	}
+	bool isAIntOrFloat();
 
 	//overriden methods from Validator class
 	bool validate() override{

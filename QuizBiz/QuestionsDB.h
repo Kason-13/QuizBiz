@@ -17,6 +17,17 @@ public:
 	std::vector<Question*> CreateQuestions();
 	std::vector<Question*> getDB();
 
+	void setValidatorPtr(ValidatorChoixRep *vChoix,
+		ValidatorNumerique *vNum,
+		ValidatorText *vText,
+		ValidatorVraisFaux *vVraiFaux);
+
 private:
 	std::vector<Question*> DB;
+
+	// Validator pointers
+	ValidatorChoixRep *validatorChoixRepPTR;
+	ValidatorNumerique *validatorNumeriquePTR;
+	ValidatorText *validatorTextPTR;
+	ValidatorVraisFaux *validatorVraiFauxPTR;
 };

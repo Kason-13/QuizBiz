@@ -131,6 +131,7 @@
     <ClCompile Include="QuestionsDB.cpp" />
     <ClCompile Include="QuestionText.cpp" />
     <ClCompile Include="QuestionVraisFaux.cpp" />
+    <ClCompile Include="Resume.cpp" />
     <ClCompile Include="Validator.cpp" />
     <ClCompile Include="ValidatorChoixRep.cpp" />
     <ClCompile Include="ValidatorNumerique.cpp" />
@@ -147,6 +148,7 @@
     <ClInclude Include="QuestionsDB.h" />
     <ClInclude Include="QuestionText.h" />
     <ClInclude Include="QuestionVraisFaux.h" />
+    <ClInclude Include="Resume.h" />
     <ClInclude Include="Validator.h" />
     <ClInclude Include="ValidatorChoixRep.h" />
     <ClInclude Include="ValidatorNumerique.h" />

@@ -2,15 +2,17 @@
 #include "Question.h"
 #include <vector>
 #include <string>
+#include "ValidatorChoixRep.h"
 
 class QuestionChoixRep : public Question {
 
 public:
-	QuestionChoixRep(std::string question, std::vector<std::string> choix, int indexRep)
+	QuestionChoixRep(std::string question, std::vector<std::string> choix, int indexRep,ValidatorChoixRep *validatorChoixRepPtr)
 	{
 		mQuestion = question;
 		mChoixReps = choix;
-		mIndexRep = indexRep;
+		mReponse = indexRep;
+		validator = validatorChoixRepPtr;
 	}
 	~QuestionChoixRep() override = default;
 	void affichageInstruction() override {
@@ -19,6 +21,6 @@ public:
 			std::cout << index + 1 << ": " << mChoixReps.at(index) << "\n";
 	}
 private:
-	int mIndexRep = 0;
+	int mReponse = 0;
 	std::vector<std::string> mChoixReps;
 };

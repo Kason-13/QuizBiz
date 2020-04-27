@@ -1,24 +1,16 @@
 #pragma once
 #include "Validator.h"
 #include <string>
-#include <regex>
 #include <vector>
 
 class ValidatorText : public Validator {
 public:
-	ValidatorText(std::string userAnswer) {
-		mUserAnswer = userAnswer;
-	}
+	ValidatorText() {}
 	~ValidatorText() override = default;
 
-	void setReponse(std::string reponseText) {
-		mReponse = reponseText;
-	}
+	void setReponse(std::string reponseText);
 
-	void setContraintes(int min, int max) {
-		minLenght = min;
-		maxLength = max;
-	}
+	void setContraintes(int min, int max);
 
 	std::vector<std::string> splitText(std::string strToSplit);
 

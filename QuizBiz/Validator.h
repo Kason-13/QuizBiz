@@ -9,6 +9,12 @@ public:
 	virtual bool validate() = 0;
 	virtual bool verifierReponse() = 0;
 	bool verifier();
+	void setUserAnswer(std::string userAnswer);
+	virtual void setReponse(bool reponse) = 0;
+	virtual void setReponse(int indexRep) = 0;
+	virtual void setReponse(std::string reponseText) = 0;
+	virtual void setReponse(float reponse) = 0;
+
 
 protected:
 	std::string mUserAnswer;

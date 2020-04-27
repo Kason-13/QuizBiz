@@ -6,14 +6,10 @@
 class ValidatorVraisFaux : public Validator {
 
 public:
-	ValidatorVraisFaux(std::string userAnswer) {
-		mUserAnswer = userAnswer;
-	}
+	ValidatorVraisFaux() {}
 	~ValidatorVraisFaux() override = default;
 
-	void setReponse(bool reponse) {
-		mReponse = reponse;
-	}
+	void setReponse(bool reponse);
 
 	//overriden methods from Validator class
 	bool validate() override {

@@ -1,14 +1,16 @@
 #pragma once
 #include "Question.h"
 #include <string>
+#include "ValidatorNumerique.h"
 
 class QuestionNumerique : public Question
 {
 public:
-	QuestionNumerique(std::string question,bool chiffreRond,float reponse) 
+	QuestionNumerique(std::string question,bool chiffreRond,float reponse,ValidatorNumerique *validatorNumPtr) 
 	{
 		mQuestion = question;
 		mEntier = chiffreRond;
+		validator = validatorNumPtr;
 	}
 	~QuestionNumerique() override = default;
 	void affichageInstruction() override {

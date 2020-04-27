@@ -17,3 +17,12 @@ std::vector<std::string> ValidatorText::splitText(std::string strToSplit) {
 	return toReturn;
 }
 
+void ValidatorText::setReponse(std::string reponseText){
+		mReponse = reponseText;
+}
+
+void ValidatorText::setContraintes(int min, int max) {
+	minLenght = min;
+	maxLength = max;
+}
+
