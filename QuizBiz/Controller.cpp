@@ -24,9 +24,8 @@ void Controller::processQuestion(int index) {
 	bool valideAnswer = false;
 	do
 	{
+		questionListe.at(index)->setReponse(); // set la reponse de la question actuelle au validator
 		questionListe.at(index)->validator->setUserAnswer(vue.userInput());
-		//questionListe.at(index)->validator->setReponse(questionListe.at(index).)
-		// Question.h mReponse ???
 		valideAnswer = questionListe.at(index)->validator->verifier();
 		std::cout << "\n" << valideAnswer;
 	} while (!valideAnswer);

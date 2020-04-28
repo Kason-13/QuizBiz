@@ -15,6 +15,11 @@ public:
 		validator = validatorChoixRepPtr;
 	}
 	~QuestionChoixRep() override = default;
+
+	//overrides
+	void setReponse() override {
+		((ValidatorChoixRep*)&validator)->setReponse(mReponse);
+	}
 	void affichageInstruction() override {
 		std::cout << "\nChoisir une des reponses suivantes en indiquant l'index\n";
 		for (int index{}; index < mChoixReps.size(); ++index)

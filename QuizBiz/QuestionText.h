@@ -15,6 +15,12 @@ public:
 		validator = validatorTextPtr;
 	}
 	~QuestionText() override = default;
+
+	// overrides
+	void setReponse() override {
+		((ValidatorText*)&validator)->setReponse(mReponse);
+	}
+
 	void affichageInstruction() override {
 		std::cout << "repondez avec une reponse entre " << mMinLengthContrainte << " et " << mMaxLengthContrainte << " characteres.";
 	}

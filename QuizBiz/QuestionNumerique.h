@@ -11,8 +11,14 @@ public:
 		mQuestion = question;
 		mEntier = chiffreRond;
 		validator = validatorNumPtr;
+		mReponse = reponse;
 	}
 	~QuestionNumerique() override = default;
+
+	//overrides
+	void setReponse() override {
+		((ValidatorNumerique*)&validator)->setReponse(mReponse);
+	}
 	void affichageInstruction() override {
 		std::cout << "Entrez votre reponse en valeur numerique.\n";
 	}

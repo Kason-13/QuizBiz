@@ -13,6 +13,11 @@ public:
 		validator = validatorPtr;
 	}
 	~QuestionVraisFaux() override = default;
+
+	//overrides
+	void setReponse() override {
+		((ValidatorVraisFaux*)&validator)->setReponse(mReponse);
+	}
 	void affichageInstruction() override {
 		std::cout << "/nRepondez en inscrivant 'vrais' ou 'faux' / 'v' ou 'f' ";
 	}

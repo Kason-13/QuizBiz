@@ -1,4 +1,13 @@
 ﻿  Controller.cpp
-f:\_cpp\quizbiz\quizbiz\questionchoixrep.h(20): warning C4018: '<' : incompatibilité signed/unsigned
+f:\_cpp\quizbiz\quizbiz\questionchoixrep.h(25): warning C4018: '<' : incompatibilité signed/unsigned
 f:\_cpp\quizbiz\quizbiz\controller.cpp(18): warning C4018: '<' : incompatibilité signed/unsigned
+  Model.cpp
+f:\_cpp\quizbiz\quizbiz\questionchoixrep.h(25): warning C4018: '<' : incompatibilité signed/unsigned
+  QuestionChoixRep.cpp
+f:\_cpp\quizbiz\quizbiz\questionchoixrep.h(25): warning C4018: '<' : incompatibilité signed/unsigned
+  QuestionNumerique.cpp
+  QuestionText.cpp
+  QuestionsDB.cpp
+f:\_cpp\quizbiz\quizbiz\questionchoixrep.h(25): warning C4018: '<' : incompatibilité signed/unsigned
+  Génération de code en cours...
   QuizBiz.vcxproj -> F:\_cpp\QuizBiz\Debug\QuizBiz.exe
