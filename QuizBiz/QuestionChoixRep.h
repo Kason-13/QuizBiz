@@ -7,19 +7,25 @@
 class QuestionChoixRep : public Question {
 
 public:
-	QuestionChoixRep(std::string question, std::vector<std::string> choix, int indexRep,ValidatorChoixRep *validatorChoixRepPtr)
+	QuestionChoixRep(std::string question, std::vector<std::string> choix, int indexRep,int points)
+		:Question(new ValidatorChoixRep)
 	{
 		mQuestion = question;
 		mChoixReps = choix;
 		mReponse = indexRep;
-		validator = validatorChoixRepPtr;
+		mPoints = points;
 	}
 	~QuestionChoixRep() override = default;
 
 	//overrides
-	void setReponse() override {
-		((ValidatorChoixRep*)&validator)->setReponse(mReponse);
+	int getPoint() override{
+		return mPoints;
 	}
+
+	void setReponse() override {
+		((ValidatorChoixRep*)mValidator)->setReponse(mReponse);
+	}
+
 	void affichageInstruction() override {
 		std::cout << "\nChoisir une des reponses suivantes en indiquant l'index\n";
 		for (int index{}; index < mChoixReps.size(); ++index)
@@ -28,4 +34,5 @@ public:
 private:
 	int mReponse = 0;
 	std::vector<std::string> mChoixReps;
+	int mPoints = 0;
 };

@@ -1,11 +1,14 @@
 #include "Validator.h"
 
-bool Validator::verifier() {
+int Validator::verifier() {
 	validated = validate();
 	verified = verifierReponse();
-	if (validated&&verified)
-		return true;
-	return false;
+	if (!validated)
+		return 0;
+	else if (!verified)
+		return 2;
+	else if(validated && verified)
+		return 1;
 }
 
 void Validator::setUserAnswer(std::string userAnswer) {

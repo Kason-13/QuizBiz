@@ -4,6 +4,8 @@
 #include "Question.h"
 #include <string>
 #include "Resume.h"
+#include <vector>
+#include <cstdlib>
 
 class Controller{
 public:
@@ -11,6 +13,8 @@ public:
 	~Controller() = default;
 	void boucleQuiz();
 	void processQuestion(int index);
+	void playAgain();
+	void quizSetup();
 
 private:
 	bool quitter{ false };

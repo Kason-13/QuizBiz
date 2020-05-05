@@ -35,6 +35,6 @@ public:
 	}
 
 private:
-	bool mReponse;
+	bool mReponse; // reponse de la question
 	char repMaj;
 };

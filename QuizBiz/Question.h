@@ -5,12 +5,19 @@
 
 class Question 
 {
-public:
-	Question() : mQuestion{} {}
-	virtual ~Question() = default;
-	virtual void affichageInstruction() = 0;
-	virtual void setReponse() = 0;
-
+protected:
+	Validator *mValidator;
 	std::string mQuestion;
-	Validator *validator;
+public:
+	Question(Validator *validator) : mQuestion{}, mValidator{ validator } {
+		if (validator == nullptr) throw std::invalid_argument("validator cannot be a null pointer"); 
+	}
+	virtual ~Question() { delete mValidator; };
+
+	Validator *getValidator();
+	std::string getQuestion();
+
+	virtual void setReponse() = 0 ;
+	virtual int getPoint() = 0;
+	virtual void affichageInstruction() = 0;
 };

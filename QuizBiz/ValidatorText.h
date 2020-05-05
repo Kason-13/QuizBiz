@@ -24,6 +24,7 @@ public:
 
 	bool verifierReponse() override {
 		wordList = splitText(mUserAnswer);
+		mReponse = mReponse;
 		std::vector<std::string> mReponseWordList = splitText(mReponse);
 		float userScore = 0;
 		int dividend = 0;

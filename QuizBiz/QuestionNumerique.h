@@ -6,23 +6,31 @@
 class QuestionNumerique : public Question
 {
 public:
-	QuestionNumerique(std::string question,bool chiffreRond,float reponse,ValidatorNumerique *validatorNumPtr) 
+	QuestionNumerique(std::string question,bool chiffreRond,float reponse, int points)
+		:Question(new ValidatorNumerique)
 	{
 		mQuestion = question;
 		mEntier = chiffreRond;
-		validator = validatorNumPtr;
 		mReponse = reponse;
+		mPoints = points;
 	}
 	~QuestionNumerique() override = default;
 
+
 	//overrides
-	void setReponse() override {
-		((ValidatorNumerique*)&validator)->setReponse(mReponse);
+	int getPoint() override {
+		return mPoints;
 	}
+
+	void setReponse() override {
+		((ValidatorNumerique*)mValidator)->setReponse(mReponse);
+	}
+
 	void affichageInstruction() override {
 		std::cout << "Entrez votre reponse en valeur numerique.\n";
 	}
 private:
 	bool mEntier;
 	float mReponse = 0;
+	int mPoints = 0;
 };

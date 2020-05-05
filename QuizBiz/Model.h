@@ -13,10 +13,17 @@ class Model
 public:
 	Model();
 	~Model();
+
+	QuestionDB DB;
+
+	ValidatorChoixRep getValidatorChoixRep();
+	ValidatorNumerique getValidatorNumerique();
+	ValidatorText getValidatorText();
+	ValidatorVraisFaux getValidatorVraiFaux();
+
 	std::vector<Question*> getQuestions(int index);
 
 private:
-	QuestionDB DB;
 	std::vector<std::vector<Question*>> questionDB;
 
 	// instances des validators

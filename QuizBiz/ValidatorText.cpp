@@ -4,15 +4,16 @@ std::vector<std::string> ValidatorText::splitText(std::string strToSplit) {
 	char delimiter = ' ';
 	std::vector<std::string> toReturn;
 	std::string strToAppend = "";
-	for (int index{}; index < strToSplit.size(); ++index)
+	std::string copyStrToSplit = strToSplit + ' ';
+	for (int index{}; index < copyStrToSplit.size(); ++index)
 	{
-		if (strToSplit.at(index) == delimiter)
+		if (copyStrToSplit.at(index) == delimiter)
 		{
 			toReturn.push_back(strToAppend);
 			strToAppend = "";
 		}
 		else
-			strToAppend += strToSplit.at(index);
+			strToAppend += copyStrToSplit.at(index);
 	}
 	return toReturn;
 }
