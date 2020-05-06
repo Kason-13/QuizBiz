@@ -2,7 +2,8 @@
 
 int Validator::verifier() {
 	validated = validate();
-	verified = verifierReponse();
+	if(validated)
+		verified = verifierReponse();
 	if (!validated)
 		return 0;
 	else if (!verified)

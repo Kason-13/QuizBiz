@@ -1,3 +1,3 @@
-﻿  Controller.cpp
-f:\_cpp\quizbiz\quizbiz\questionchoixrep.h(31): warning C4018: '<' : incompatibilité signed/unsigned
+﻿  Validator.cpp
+f:\_cpp\quizbiz\quizbiz\validator.cpp(13): warning C4715: 'Validator::verifier' : les chemins de contrôle ne retournent pas tous une valeur
   QuizBiz.vcxproj -> F:\_cpp\QuizBiz\Debug\QuizBiz.exe
