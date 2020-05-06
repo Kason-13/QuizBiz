@@ -1,11 +1,12 @@
 #include "ValidatorText.h"
 
+// permet de split en un vector de mots
 std::vector<std::string> ValidatorText::splitText(std::string strToSplit) {
 	char delimiter = ' ';
 	std::vector<std::string> toReturn;
 	std::string strToAppend = "";
 	std::string copyStrToSplit = strToSplit + ' ';
-	for (int index{}; index < copyStrToSplit.size(); ++index)
+	for (size_t index{}; index < copyStrToSplit.size(); ++index)
 	{
 		if (copyStrToSplit.at(index) == delimiter)
 		{
@@ -15,7 +16,7 @@ std::vector<std::string> ValidatorText::splitText(std::string strToSplit) {
 		else
 			strToAppend += copyStrToSplit.at(index);
 	}
-	return toReturn;
+	return toReturn; // vecteur de mots splitted
 }
 
 void ValidatorText::setReponse(std::string reponseText){

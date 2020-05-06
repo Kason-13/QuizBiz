@@ -27,7 +27,7 @@ public:
 	}
 
 	void affichageInstruction() override {
-		std::cout << "Entrez votre reponse en valeur numerique.\n";
+		std::cout << "\nEntrez votre reponse en valeur numerique.\n";
 	}
 private:
 	bool mEntier;

@@ -16,11 +16,16 @@ public:
 
 	QuestionDB DB;
 
+	//pour get les validators
 	ValidatorChoixRep getValidatorChoixRep();
 	ValidatorNumerique getValidatorNumerique();
 	ValidatorText getValidatorText();
 	ValidatorVraisFaux getValidatorVraiFaux();
 
+	//taille de DB
+	int getDBSize();
+
+	//obtenir les questions at le index
 	std::vector<Question*> getQuestions(int index);
 
 private:

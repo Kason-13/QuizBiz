@@ -12,13 +12,14 @@ public:
 	void setReponse(bool reponse);
 
 	//overriden methods from Validator class
+	// verifie si la premire lettre est soit v ou f
 	bool validate() override {
 		repMaj = toupper(mUserAnswer.at(0));
 		if (repMaj == 'V' || repMaj == 'F')
 			return true;
 		return false;
 	}
-
+	//verifie la reponse
 	bool verifierReponse() override {
 		switch (repMaj)
 		{

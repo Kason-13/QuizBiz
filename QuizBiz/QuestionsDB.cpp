@@ -4,12 +4,14 @@ void QuestionDB::remplirDB() {
 	DB = CreateQuestions();
 }
 
+//singleton de la DB
 std::vector<std::vector<Question*>> QuestionDB::getDB() {
 	if (DB.empty())
 		remplirDB();
 	return DB;
 }
 
+//questions hardcoded
 std::vector<std::vector<Question*>> QuestionDB::CreateQuestions() {
 	std::vector<std::vector<Question*>> toReturn;
 	std::vector<Question*>newQuestionSet;

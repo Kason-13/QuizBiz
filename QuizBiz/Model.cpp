@@ -8,9 +8,15 @@ Model::~Model() {}
 
 std::vector<Question*> Model::getQuestions(int index) {
 	questionDB = DB.getDB();
-	return questionDB.at(index);
+	return questionDB.at(index); // return la liste de question par index
 }
 
+int Model::getDBSize() {
+	questionDB = DB.getDB();
+	return questionDB.size();
+}
+
+//validator getters
 ValidatorChoixRep Model::getValidatorChoixRep() {
 	return validatorChoixRep;
 }

@@ -24,6 +24,7 @@ public:
 
 	void setReponse() override {
 		((ValidatorChoixRep*)mValidator)->setReponse(mReponse);
+		((ValidatorChoixRep*)mValidator)->setNumberOfOptions(mChoixReps.size());
 	}
 
 	void affichageInstruction() override {

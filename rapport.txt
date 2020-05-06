@@ -1,0 +1,9 @@
+1. J'ai passé environ(un peu plus) 7 heures sur le projet.
+
+2. Elle aide a ne pas avoir a re-coder une classe au complet, mais plutot
+   de seulement redefinir une ou plusieurs methodes si elle a juste un
+   petit changement au niveau de sa fonctionalité.
+
+3. Peut être l'estimation du temps que le projet allait prendre.
+   Je croyais au début pouvoir le terminer en moins de 3 heures, mais ce
+   n'était pas le cas.

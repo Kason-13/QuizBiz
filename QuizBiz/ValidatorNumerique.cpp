@@ -5,7 +5,7 @@ void ValidatorNumerique::setReponse(float reponse){
 }
 
 bool ValidatorNumerique::isAIntOrFloat() {
-	for (int index{}; index < mUserAnswer.length(); ++index) {
+	for (size_t index{}; index < mUserAnswer.length(); ++index) {
 		if (!std::isdigit(mUserAnswer.at(index)) && mUserAnswer.at(index) != '.')
 			return false;
 	}

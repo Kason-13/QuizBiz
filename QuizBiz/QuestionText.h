@@ -28,7 +28,7 @@ public:
 	}
 
 	void affichageInstruction() override {
-		std::cout << "repondez avec une reponse entre " << mMinLengthContrainte << " et " << mMaxLengthContrainte << " characteres.\n";
+		std::cout << "\nrepondez avec une reponse entre " << mMinLengthContrainte << " et " << mMaxLengthContrainte << " characteres.\n";
 	}
 private:
 	std::string mReponse = "";

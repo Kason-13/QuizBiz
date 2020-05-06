@@ -15,13 +15,15 @@ public:
 	std::vector<std::string> splitText(std::string strToSplit);
 
 	//overriden methods from Validator class
+	// pour verifier si le nombre de characteres respecte les contraintes
 	bool validate() override {
 		int sizeOfAnswer = mReponse.size();
 		if (sizeOfAnswer<minLenght || sizeOfAnswer>maxLength)
 			return false;
 		return true;
 	}
-
+	// pour verifier si la reponse du user resemble a la reponse 
+	// en haut de 65% de match, c'est une bonne reponse
 	bool verifierReponse() override {
 		wordList = splitText(mUserAnswer);
 		mReponse = mReponse;

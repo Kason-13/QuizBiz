@@ -1,11 +1,5 @@
 #include "View.h"
 
-void Vue::affichageTitre(std::string titre) {
-	// to format it in the top middle of the screen
-
-	std::cout << "titre";
-}
-
 std::string Vue::userInput() {
 	std::string userInput="";
 	std::getline(std::cin, userInput);
@@ -15,7 +9,7 @@ std::string Vue::userInput() {
 void Vue::montrerResultat(int bonneRep, int TotalQuestion, int points) {
 	std::cout << "Vous avez eu " << bonneRep << " bonne reponse sur les " << TotalQuestion << " questions.\n";
 	std::cout << "cela vous donne une note de " << ((((float)bonneRep) / ((float)TotalQuestion)) * 100) << "%\n";
-	std::cout << "Vous avez un total de " << points << " pour ce quiz!";
+	std::cout << "Vous avez un total de " << points << " points pour ce quiz!";
 }
 
 void Vue::affichageQuestion(std::string question) {

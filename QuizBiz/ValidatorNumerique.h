@@ -13,12 +13,13 @@ public:
 	bool isAIntOrFloat();
 
 	//overriden methods from Validator class
+	// pour valider si c'est un nombre/nombre a virgule
 	bool validate() override{
 		if (isAIntOrFloat())
 			return true;
 		return false;
 	}
-
+	// pour verifier si c'est la bonne reponse
 	bool verifierReponse() override {
 		if (mReponse == userResponse) return true;
 		return false;

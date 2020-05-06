@@ -25,7 +25,7 @@ public:
 	}
 
 	void affichageInstruction() override {
-		std::cout << "Repondez en inscrivant 'vrais' ou 'faux' / 'v' ou 'f' \n";
+		std::cout << "\nRepondez en inscrivant 'vrais' ou 'faux' / 'v' ou 'f' \n";
 	}
 private:
 	bool mReponse = false;
